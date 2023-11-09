@@ -1,0 +1,128 @@
+{
+	padding: 0;
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+	background-color: #17177e;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 60px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	
+}
+
+header nav {
+	width: 40%;
+}
+
+header nav ul {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: white;
+}
+
+header nav ul li {
+	list-style-type: none;
+}
+
+header nav ul li a {
+	color: inherit;
+	text-decoration: none;
+}
+
+header input {
+	border-radius: 50px;
+	padding: 2.5px;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+}
+
+.description {
+	text-align: center;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.row1{
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: 30px;
+}
+
+.row1 div {
+    margin: 10px;
+}
+
+.row1 img {
+    border-radius: 10px;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.row2 img{
+	border-radius: 10px;
+}
+
+footer{
+	background-color: #17177e;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 60px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin-top: 30px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+service h3 {
+	visibility: hidden;
+}
+
+.services .service {
+    width: 300px;
+	height: 70px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.services .service:hover {
+    height: 360px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.truncate-text {
+    white-space: nowrap;
+    overflow: clip;
+    text-overflow: ellipsis;
+}
+
+.services .service:hover .truncate-text {
+    white-space: normal;
+    overflow:auto;
+    text-overflow: clip;
+}
